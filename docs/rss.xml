@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Chi</title><link>https://Chi-43.github.io</link><description>Welcome to Chi的博客</description><copyright>Chi</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/171002809?v=4&amp;size=64</url><title>avatar</title><link>https://Chi-43.github.io</link></image><lastBuildDate>Thu, 11 Jun 2026 09:31:28 +0000</lastBuildDate><managingEditor>Chi</managingEditor><ttl>60</ttl><webMaster>Chi</webMaster><item><title>Linux基础知识</title><link>https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html</link><description># Linux学习
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Chi</title><link>https://Chi-43.github.io</link><description>Welcome to Chi的博客</description><copyright>Chi</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/171002809?v=4&amp;size=64</url><title>avatar</title><link>https://Chi-43.github.io</link></image><lastBuildDate>Thu, 11 Jun 2026 13:22:42 +0000</lastBuildDate><managingEditor>Chi</managingEditor><ttl>60</ttl><webMaster>Chi</webMaster><item><title>Linux基础知识</title><link>https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html</link><description># Linux学习
 
 ## 1 工具
 ### 1.1 使用MobaXterm连接Linux
@@ -108,7 +108,18 @@ exit 回退到普通用户
 &lt;img width='598' height='138' alt='Image' src='https://github.com/user-attachments/assets/b87a120f-4163-4826-b0fd-800ee95cad50' /&gt;
 
 ### 2.2.20 tail命令
-&lt;img width='709' height='206' alt='Image' src='https://github.com/user-attachments/assets/e07e3064-d337-48eb-b7e4-e4002c274939' /&gt;。</description><guid isPermaLink="true">https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html</guid><pubDate>Thu, 11 Jun 2026 09:20:52 +0000</pubDate></item><item><title>[论文阅读01]SmartANNS：基于SmartSSD的可扩展十亿级向量近似最近邻搜索</title><link>https://Chi-43.github.io/post/%5B-lun-wen-yue-du-01%5DSmartANNS%EF%BC%9A-ji-yu-SmartSSD-de-ke-kuo-zhan-shi-yi-ji-xiang-liang-jin-si-zui-jin-lin-sou-suo.html</link><description>论文题目：A SmartSSD-based Near Data Processing Architecture for Scalable Billion-point Approximate Nearest Neighbor Search
+&lt;img width='709' height='206' alt='Image' src='https://github.com/user-attachments/assets/e07e3064-d337-48eb-b7e4-e4002c274939' /&gt;
+
+## 3 用户管理权限
+### 3.1 su和exit命令
+&lt;img width='1263' height='624' alt='Image' src='https://github.com/user-attachments/assets/0dbe7f55-d472-4d1c-9e0c-5800fc7247b2' /&gt;
+
+### 3.2 sudo命令
+&lt;img width='775' height='380' alt='Image' src='https://github.com/user-attachments/assets/51d431b4-dd97-4b28-8d26-8e8bb53fe53b' /&gt;
+
+### 3.3 为普通用户配置sudo认证
+&lt;img width='775' height='380' alt='Image' src='https://github.com/user-attachments/assets/c11fac20-d76f-46da-9c52-c58ad616de8a' /&gt;
+。</description><guid isPermaLink="true">https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html</guid><pubDate>Thu, 11 Jun 2026 09:20:52 +0000</pubDate></item><item><title>[论文阅读01]SmartANNS：基于SmartSSD的可扩展十亿级向量近似最近邻搜索</title><link>https://Chi-43.github.io/post/%5B-lun-wen-yue-du-01%5DSmartANNS%EF%BC%9A-ji-yu-SmartSSD-de-ke-kuo-zhan-shi-yi-ji-xiang-liang-jin-si-zui-jin-lin-sou-suo.html</link><description>论文题目：A SmartSSD-based Near Data Processing Architecture for Scalable Billion-point Approximate Nearest Neighbor Search
 
 # 摘要
 高维向量空间中的 **近似最近邻搜索（ANNS）** 在数据库与机器学习应用中变得愈发重要。</description><guid isPermaLink="true">https://Chi-43.github.io/post/%5B-lun-wen-yue-du-01%5DSmartANNS%EF%BC%9A-ji-yu-SmartSSD-de-ke-kuo-zhan-shi-yi-ji-xiang-liang-jin-si-zui-jin-lin-sou-suo.html</guid><pubDate>Tue, 09 Jun 2026 12:54:52 +0000</pubDate></item></channel></rss>

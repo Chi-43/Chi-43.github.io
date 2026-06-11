@@ -108,3 +108,13 @@ exit 回退到普通用户
 
 ### 2.2.20 tail命令
 <img width="709" height="206" alt="Image" src="https://github.com/user-attachments/assets/e07e3064-d337-48eb-b7e4-e4002c274939" />
+
+## 3 用户管理权限
+### 3.1 su和exit命令
+<img width="1263" height="624" alt="Image" src="https://github.com/user-attachments/assets/0dbe7f55-d472-4d1c-9e0c-5800fc7247b2" />
+
+### 3.2 sudo命令
+<img width="775" height="380" alt="Image" src="https://github.com/user-attachments/assets/51d431b4-dd97-4b28-8d26-8e8bb53fe53b" />
+
+### 3.3 为普通用户配置sudo认证
+<img width="775" height="380" alt="Image" src="https://github.com/user-attachments/assets/c11fac20-d76f-46da-9c52-c58ad616de8a" />
