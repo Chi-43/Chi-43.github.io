@@ -1,9 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Chi</title><link>https://Chi-43.github.io</link><description>Welcome to Chi的博客</description><copyright>Chi</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/171002809?v=4&amp;size=64</url><title>avatar</title><link>https://Chi-43.github.io</link></image><lastBuildDate>Thu, 11 Jun 2026 09:21:25 +0000</lastBuildDate><managingEditor>Chi</managingEditor><ttl>60</ttl><webMaster>Chi</webMaster><item><title>Linux基础知识</title><link>https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html</link><description># Linux学习
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Chi</title><link>https://Chi-43.github.io</link><description>Welcome to Chi的博客</description><copyright>Chi</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/171002809?v=4&amp;size=64</url><title>avatar</title><link>https://Chi-43.github.io</link></image><lastBuildDate>Thu, 11 Jun 2026 09:31:28 +0000</lastBuildDate><managingEditor>Chi</managingEditor><ttl>60</ttl><webMaster>Chi</webMaster><item><title>Linux基础知识</title><link>https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html</link><description># Linux学习
 
 ## 1 工具
-使用MobaXterm连接Linux
+### 1.1 使用MobaXterm连接Linux
 &lt;img width='1232' height='845' alt='Image' src='https://github.com/user-attachments/assets/0607b410-8efa-4eb2-bb96-a4d4548f04c3' /&gt;
+
+### 1.2 vim编辑器
+&lt;img width='1036' height='446' alt='Image' src='https://github.com/user-attachments/assets/3eab609f-c43c-4dd4-a2ad-39ec6534b3ae' /&gt;
+
+vim 文件路径
+如果文件路径不存在 则创建文件
+vim hello.txt //进入命令模式
+按键盘**i**，进入输入模式
+在输入模式内输入内容
+输入完成后，按**esc**回退回命令模式
+在命令模式内 按键盘:进入底线命令模式
+在底线命令内输入 **:wq** 保存文件并退出vim编辑器
 
 ## 2 linux 基础命令
 ### 2.1 Linux的目录结构

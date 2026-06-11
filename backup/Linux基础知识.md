@@ -1,8 +1,20 @@
 # Linux学习
 
 ## 1 工具
-使用MobaXterm连接Linux
+### 1.1 使用MobaXterm连接Linux
 <img width="1232" height="845" alt="Image" src="https://github.com/user-attachments/assets/0607b410-8efa-4eb2-bb96-a4d4548f04c3" />
+
+### 1.2 vim编辑器
+<img width="1036" height="446" alt="Image" src="https://github.com/user-attachments/assets/3eab609f-c43c-4dd4-a2ad-39ec6534b3ae" />
+
+vim 文件路径
+如果文件路径不存在 则创建文件
+vim hello.txt //进入命令模式
+按键盘**i**，进入输入模式
+在输入模式内输入内容
+输入完成后，按**esc**回退回命令模式
+在命令模式内 按键盘:进入底线命令模式
+在底线命令内输入 **:wq** 保存文件并退出vim编辑器
 
 ## 2 linux 基础命令
 ### 2.1 Linux的目录结构
