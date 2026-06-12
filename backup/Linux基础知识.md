@@ -118,3 +118,28 @@ exit 回退到普通用户
 
 ### 3.3 为普通用户配置sudo认证
 <img width="775" height="380" alt="Image" src="https://github.com/user-attachments/assets/c11fac20-d76f-46da-9c52-c58ad616de8a" />
+
+### 3.4 用户和用户组
+均需要在root命令下进行
+创建用户组 groupadd 用户组名
+删除用户组 groupdel 用户组名
+<img width="2161" height="961" alt="Image" src="https://github.com/user-attachments/assets/94b145bd-16e6-4d4a-90f6-1d9830ecb65f" />
+<img width="476" height="145" alt="Image" src="https://github.com/user-attachments/assets/5a2d80ee-c3b4-4c8f-919d-542bebc377f2" />
+
+### 3.5权限信息
+<img width="559" height="423" alt="Image" src="https://github.com/user-attachments/assets/4a44c54d-5200-487e-bf60-12d99d4a5309" />
+<img width="818" height="260" alt="Image" src="https://github.com/user-attachments/assets/bc35fbfb-f532-4b7f-9143-da5ab0c16e16" />
+
+#### 3.5.1 rwx命令信息
+<img width="567" height="378" alt="Image" src="https://github.com/user-attachments/assets/a9710eef-6233-4d12-b25d-7fc0dd035884" />
+
+### 3.6 chmod命令
+<img width="1027" height="329" alt="Image" src="https://github.com/user-attachments/assets/c173eca6-8da0-4526-ac22-566432a28b92" />
+<img width="700" height="117" alt="Image" src="https://github.com/user-attachments/assets/f94f7be3-6434-43ab-aed8-012c4670f35b" />
+
+### 3.7 权限的数字序号
+<img width="977" height="427" alt="Image" src="https://github.com/user-attachments/assets/e4508731-e7b8-4b3b-98dd-838bcec4f4f6" />
+
+### 3.8 chown命令
+<img width="833" height="249" alt="Image" src="https://github.com/user-attachments/assets/344819e5-b221-4a54-9cb6-63417640fcf7" />
+

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Chi</title><link>https://Chi-43.github.io</link><description>Welcome to Chi的博客</description><copyright>Chi</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/171002809?v=4&amp;size=64</url><title>avatar</title><link>https://Chi-43.github.io</link></image><lastBuildDate>Thu, 11 Jun 2026 13:22:42 +0000</lastBuildDate><managingEditor>Chi</managingEditor><ttl>60</ttl><webMaster>Chi</webMaster><item><title>Linux基础知识</title><link>https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html</link><description># Linux学习
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Chi</title><link>https://Chi-43.github.io</link><description>Welcome to Chi的博客</description><copyright>Chi</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/171002809?v=4&amp;size=64</url><title>avatar</title><link>https://Chi-43.github.io</link></image><lastBuildDate>Fri, 12 Jun 2026 03:20:43 +0000</lastBuildDate><managingEditor>Chi</managingEditor><ttl>60</ttl><webMaster>Chi</webMaster><item><title>Linux基础知识</title><link>https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html</link><description># Linux学习
 
 ## 1 工具
 ### 1.1 使用MobaXterm连接Linux
@@ -119,6 +119,31 @@ exit 回退到普通用户
 
 ### 3.3 为普通用户配置sudo认证
 &lt;img width='775' height='380' alt='Image' src='https://github.com/user-attachments/assets/c11fac20-d76f-46da-9c52-c58ad616de8a' /&gt;
+
+### 3.4 用户和用户组
+均需要在root命令下进行
+创建用户组 groupadd 用户组名
+删除用户组 groupdel 用户组名
+&lt;img width='2161' height='961' alt='Image' src='https://github.com/user-attachments/assets/94b145bd-16e6-4d4a-90f6-1d9830ecb65f' /&gt;
+&lt;img width='476' height='145' alt='Image' src='https://github.com/user-attachments/assets/5a2d80ee-c3b4-4c8f-919d-542bebc377f2' /&gt;
+
+### 3.5权限信息
+&lt;img width='559' height='423' alt='Image' src='https://github.com/user-attachments/assets/4a44c54d-5200-487e-bf60-12d99d4a5309' /&gt;
+&lt;img width='818' height='260' alt='Image' src='https://github.com/user-attachments/assets/bc35fbfb-f532-4b7f-9143-da5ab0c16e16' /&gt;
+
+#### 3.5.1 rwx命令信息
+&lt;img width='567' height='378' alt='Image' src='https://github.com/user-attachments/assets/a9710eef-6233-4d12-b25d-7fc0dd035884' /&gt;
+
+### 3.6 chmod命令
+&lt;img width='1027' height='329' alt='Image' src='https://github.com/user-attachments/assets/c173eca6-8da0-4526-ac22-566432a28b92' /&gt;
+&lt;img width='700' height='117' alt='Image' src='https://github.com/user-attachments/assets/f94f7be3-6434-43ab-aed8-012c4670f35b' /&gt;
+
+### 3.7 权限的数字序号
+&lt;img width='977' height='427' alt='Image' src='https://github.com/user-attachments/assets/e4508731-e7b8-4b3b-98dd-838bcec4f4f6' /&gt;
+
+### 3.8 chown命令
+&lt;img width='833' height='249' alt='Image' src='https://github.com/user-attachments/assets/344819e5-b221-4a54-9cb6-63417640fcf7' /&gt;
+
 。</description><guid isPermaLink="true">https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html</guid><pubDate>Thu, 11 Jun 2026 09:20:52 +0000</pubDate></item><item><title>[论文阅读01]SmartANNS：基于SmartSSD的可扩展十亿级向量近似最近邻搜索</title><link>https://Chi-43.github.io/post/%5B-lun-wen-yue-du-01%5DSmartANNS%EF%BC%9A-ji-yu-SmartSSD-de-ke-kuo-zhan-shi-yi-ji-xiang-liang-jin-si-zui-jin-lin-sou-suo.html</link><description>论文题目：A SmartSSD-based Near Data Processing Architecture for Scalable Billion-point Approximate Nearest Neighbor Search
 
 # 摘要
