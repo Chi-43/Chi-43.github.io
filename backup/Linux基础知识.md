@@ -16,6 +16,9 @@ vim hello.txt //进入命令模式
 在命令模式内 按键盘:进入底线命令模式
 在底线命令内输入 **:wq** 保存文件并退出vim编辑器
 
+### 1.3 更换yum源教程
+[https://zhuanlan.zhihu.com/p/700216782](url)
+
 ## 2 linux 基础命令
 ### 2.1 Linux的目录结构
 <img width="1147" height="357" alt="Image" src="https://github.com/user-attachments/assets/73e7fd07-4a5b-4740-9a3e-d07c6d16ad69" />
@@ -143,3 +146,111 @@ exit 回退到普通用户
 ### 3.8 chown命令
 <img width="833" height="249" alt="Image" src="https://github.com/user-attachments/assets/344819e5-b221-4a54-9cb6-63417640fcf7" />
 
+##4 常见操作命令
+### 4.1 历史命令搜索
+- history ---找到历史命令
+- 通过`:!`命令前缀 制动匹配上一次匹配前缀的命令
+- ctrl + r 输入内容去匹配历史命令
+
+### 4.2 清屏
+- ctrl + l清屏
+- clear
+
+### 4.3 yum命令(centos)
+yum命令需要联网 且需要root权限
+<img width="796" height="247" alt="Image" src="https://github.com/user-attachments/assets/d782c619-5e9b-4c94-a386-8b07959abef3" />
+
+### 4.4 apt命令(ubuntu)
+<img width="959" height="379" alt="Image" src="https://github.com/user-attachments/assets/3392a356-107f-41cf-9f36-db11bbafddf8" />
+
+### 4.5 systemctl命令---控制服务的启动 关闭和状态
+<img width="976" height="368" alt="Image" src="https://github.com/user-attachments/assets/5d35764a-1537-4072-befa-2a163ac27841" />
+<img width="512" height="129" alt="Image" src="https://github.com/user-attachments/assets/a9e17f29-f987-45b4-9e4a-85949ed801af" />
+
+### 4.6 ln命令创建软链接
+<img width="569" height="376" alt="Image" src="https://github.com/user-attachments/assets/569ca6c6-6c91-4b19-a2d3-b3bea8cb6515" />
+
+### 4.7 日期和时间
+
+#### 4.7.1 date命令
+<img width="622" height="394" alt="Image" src="https://github.com/user-attachments/assets/6a8fcf78-bf56-439e-9f39-3149a3878307" />
+ 
+#### 4.7.2 修改Linux时区
+<img width="1015" height="155" alt="Image" src="https://github.com/user-attachments/assets/db191f65-e31f-488c-af18-fb5e38ea08e0" />
+
+#### 4.7.3 ntp程序联网自动校准时间
+<img width="540" height="254" alt="Image" src="https://github.com/user-attachments/assets/63262bb5-d9be-4c78-a3c8-8e151cfd922c" />
+
+### 4.8 IP地址和主机名
+ifconfig --查看ip地址
+hostname --查看主机名
+
+修改主机名
+<img width="726" height="322" alt="Image" src="https://github.com/user-attachments/assets/d900492d-1c71-4b6c-833b-9069e37c632e" />
+
+### 4.9 网络传输
+#### 4.9.1 ping命令
+<img width="602" height="169" alt="Image" src="https://github.com/user-attachments/assets/17db76fd-48f7-48dd-b045-2b8d883f3d5e" />
+eg ping -c 3 baidu.com
+
+#### 4.9.2 wget命令 在命令行中下载网络文件
+<img width="752" height="162" alt="Image" src="https://github.com/user-attachments/assets/16db5434-96f8-4dd6-931d-dc4ca142c3f5" />
+
+#### 4.9.3 curl命令 发送http网络请求 可用于下载文件，获取信息
+<img width="699" height="159" alt="Image" src="https://github.com/user-attachments/assets/f95ac1c7-dd29-407e-bfcb-e8b96012676d" />
+
+### 4.10 端口
+<img width="552" height="120" alt="Image" src="https://github.com/user-attachments/assets/3842a68d-e57a-4573-be0b-cf9613ce519f" />
+<img width="685" height="154" alt="Image" src="https://github.com/user-attachments/assets/f503ed79-8308-4eff-9854-1c98dd604f55" />
+
+### 4.11 进程管理
+<img width="546" height="195" alt="Image" src="https://github.com/user-attachments/assets/adcadd17-3eb5-4b8c-939b-578564882b23" />
+<img width="762" height="118" alt="Image" src="https://github.com/user-attachments/assets/42e5da98-cf84-48c6-9f93-691472d90dc1" />
+
+### 4.12 主机资源
+#### 4.12.1 top命令 ----查看系统资源占用
+top命令内容详解
+<img width="1111" height="354" alt="Image" src="https://github.com/user-attachments/assets/a513d557-caef-432a-9b39-df9929853dbc" />
+<img width="280" height="194" alt="Image" src="https://github.com/user-attachments/assets/0c7774a1-07e4-40e2-bb99-679a5ec1b65e" />
+<img width="981" height="372" alt="Image" src="https://github.com/user-attachments/assets/bf361966-cb6e-442a-97cd-d95f2dbc832c" />
+
+#### 4.12.2 查看磁盘使用情况
+df命令
+<img width="401" height="109" alt="Image" src="https://github.com/user-attachments/assets/fe91a85e-f3c3-4d09-96a5-92ddccf349af" />
+iostat命令
+<img width="490" height="154" alt="Image" src="https://github.com/user-attachments/assets/94a951b6-f5f1-42f9-90ec-525adac05918" />
+
+#### 4.12.3 网络状态监控
+<img width="831" height="152" alt="Image" src="https://github.com/user-attachments/assets/09fef8d8-53dc-4965-9b22-66a909343eca" />
+
+### 4.13 环境变量
+env命令 直接查看环境变量
+env | grep PATH  ---查看本机的环境变量
+
+$符号用于取出变量的值
+eg echo $PATH ---查看本机环境变量
+
+#### 4.13.1 自行设置环境变量
+<img width="730" height="216" alt="Image" src="https://github.com/user-attachments/assets/1a55826a-924b-4b09-b475-84d709d4fce2" />
+
+### 4.14 上传/下载
+1.可在MabaXterm中进行相关操作
+2.rz和sz命令(rz命令较慢)
+<img width="608" height="378" alt="Image" src="https://github.com/user-attachments/assets/0a01f38b-755d-4c86-b885-360b7660fc6c" />
+
+### 4.15压缩
+#### 4.15.1 tar相关命令
+<img width="1095" height="469" alt="Image" src="https://github.com/user-attachments/assets/87c81087-dbbc-444e-88e7-2daf48d0cee9" />
+<img width="549" height="372" alt="Image" src="https://github.com/user-attachments/assets/1ea44ae5-ec94-4c29-aabb-a3f0e6012af7" />
+<img width="826" height="291" alt="Image" src="https://github.com/user-attachments/assets/20c3139e-354c-4a14-a865-ef75e088142c" />
+
+#### 4.15.2 zip/unzip相关命令
+<img width="779" height="119" alt="Image" src="https://github.com/user-attachments/assets/19d3a816-37b8-4c51-9f9e-fa304a30eaf5" />
+<img width="592" height="153" alt="Image" src="https://github.com/user-attachments/assets/628dfc68-389f-4287-8e96-e217a8ff7f62" />
+<img width="834" height="416" alt="Image" src="https://github.com/user-attachments/assets/2a620577-c513-4abc-b3b4-258c1a9cf4fe" />
+
+### 4.15.3 scp命令
+scp是cp命令的升级版 即 ssh cp
+
+把参数1复制到参数2
+<img width="322" height="71" alt="Image" src="https://github.com/user-attachments/assets/b0f3f067-c65f-4aba-ad5b-5764f62cde11" />

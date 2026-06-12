@@ -28,6 +28,9 @@ vim hello.txt //进入命令模式
 在命令模式内 按键盘:进入底线命令模式
 在底线命令内输入 **:wq** 保存文件并退出vim编辑器
 
+### 1.3 更换yum源教程
+[https://zhuanlan.zhihu.com/p/700216782](url)
+
 ## 2 linux 基础命令
 ### 2.1 Linux的目录结构
 <img width='1147' height='357' alt='Image' src='https://github.com/user-attachments/assets/73e7fd07-4a5b-4740-9a3e-d07c6d16ad69' />
@@ -155,6 +158,114 @@ exit 回退到普通用户
 ### 3.8 chown命令
 <img width='833' height='249' alt='Image' src='https://github.com/user-attachments/assets/344819e5-b221-4a54-9cb6-63417640fcf7' />
 
+##4 常见操作命令
+### 4.1 历史命令搜索
+- history ---找到历史命令
+- 通过`:!`命令前缀 制动匹配上一次匹配前缀的命令
+- ctrl + r 输入内容去匹配历史命令
+
+### 4.2 清屏
+- ctrl + l清屏
+- clear
+
+### 4.3 yum命令(centos)
+yum命令需要联网 且需要root权限
+<img width='796' height='247' alt='Image' src='https://github.com/user-attachments/assets/d782c619-5e9b-4c94-a386-8b07959abef3' />
+
+### 4.4 apt命令(ubuntu)
+<img width='959' height='379' alt='Image' src='https://github.com/user-attachments/assets/3392a356-107f-41cf-9f36-db11bbafddf8' />
+
+### 4.5 systemctl命令---控制服务的启动 关闭和状态
+<img width='976' height='368' alt='Image' src='https://github.com/user-attachments/assets/5d35764a-1537-4072-befa-2a163ac27841' />
+<img width='512' height='129' alt='Image' src='https://github.com/user-attachments/assets/a9e17f29-f987-45b4-9e4a-85949ed801af' />
+
+### 4.6 ln命令创建软链接
+<img width='569' height='376' alt='Image' src='https://github.com/user-attachments/assets/569ca6c6-6c91-4b19-a2d3-b3bea8cb6515' />
+
+### 4.7 日期和时间
+
+#### 4.7.1 date命令
+<img width='622' height='394' alt='Image' src='https://github.com/user-attachments/assets/6a8fcf78-bf56-439e-9f39-3149a3878307' />
+ 
+#### 4.7.2 修改Linux时区
+<img width='1015' height='155' alt='Image' src='https://github.com/user-attachments/assets/db191f65-e31f-488c-af18-fb5e38ea08e0' />
+
+#### 4.7.3 ntp程序联网自动校准时间
+<img width='540' height='254' alt='Image' src='https://github.com/user-attachments/assets/63262bb5-d9be-4c78-a3c8-8e151cfd922c' />
+
+### 4.8 IP地址和主机名
+ifconfig --查看ip地址
+hostname --查看主机名
+
+修改主机名
+<img width='726' height='322' alt='Image' src='https://github.com/user-attachments/assets/d900492d-1c71-4b6c-833b-9069e37c632e' />
+
+### 4.9 网络传输
+#### 4.9.1 ping命令
+<img width='602' height='169' alt='Image' src='https://github.com/user-attachments/assets/17db76fd-48f7-48dd-b045-2b8d883f3d5e' />
+eg ping -c 3 baidu.com
+
+#### 4.9.2 wget命令 在命令行中下载网络文件
+<img width='752' height='162' alt='Image' src='https://github.com/user-attachments/assets/16db5434-96f8-4dd6-931d-dc4ca142c3f5' />
+
+#### 4.9.3 curl命令 发送http网络请求 可用于下载文件，获取信息
+<img width='699' height='159' alt='Image' src='https://github.com/user-attachments/assets/f95ac1c7-dd29-407e-bfcb-e8b96012676d' />
+
+### 4.10 端口
+<img width='552' height='120' alt='Image' src='https://github.com/user-attachments/assets/3842a68d-e57a-4573-be0b-cf9613ce519f' />
+<img width='685' height='154' alt='Image' src='https://github.com/user-attachments/assets/f503ed79-8308-4eff-9854-1c98dd604f55' />
+
+### 4.11 进程管理
+<img width='546' height='195' alt='Image' src='https://github.com/user-attachments/assets/adcadd17-3eb5-4b8c-939b-578564882b23' />
+<img width='762' height='118' alt='Image' src='https://github.com/user-attachments/assets/42e5da98-cf84-48c6-9f93-691472d90dc1' />
+
+### 4.12 主机资源
+#### 4.12.1 top命令 ----查看系统资源占用
+top命令内容详解
+<img width='1111' height='354' alt='Image' src='https://github.com/user-attachments/assets/a513d557-caef-432a-9b39-df9929853dbc' />
+<img width='280' height='194' alt='Image' src='https://github.com/user-attachments/assets/0c7774a1-07e4-40e2-bb99-679a5ec1b65e' />
+<img width='981' height='372' alt='Image' src='https://github.com/user-attachments/assets/bf361966-cb6e-442a-97cd-d95f2dbc832c' />
+
+#### 4.12.2 查看磁盘使用情况
+df命令
+<img width='401' height='109' alt='Image' src='https://github.com/user-attachments/assets/fe91a85e-f3c3-4d09-96a5-92ddccf349af' />
+iostat命令
+<img width='490' height='154' alt='Image' src='https://github.com/user-attachments/assets/94a951b6-f5f1-42f9-90ec-525adac05918' />
+
+#### 4.12.3 网络状态监控
+<img width='831' height='152' alt='Image' src='https://github.com/user-attachments/assets/09fef8d8-53dc-4965-9b22-66a909343eca' />
+
+### 4.13 环境变量
+env命令 直接查看环境变量
+env | grep PATH  ---查看本机的环境变量
+
+$符号用于取出变量的值
+eg echo $PATH ---查看本机环境变量
+
+#### 4.13.1 自行设置环境变量
+<img width='730' height='216' alt='Image' src='https://github.com/user-attachments/assets/1a55826a-924b-4b09-b475-84d709d4fce2' />
+
+### 4.14 上传/下载
+1.可在MabaXterm中进行相关操作
+2.rz和sz命令(rz命令较慢)
+<img width='608' height='378' alt='Image' src='https://github.com/user-attachments/assets/0a01f38b-755d-4c86-b885-360b7660fc6c' />
+
+### 4.15压缩
+#### 4.15.1 tar相关命令
+<img width='1095' height='469' alt='Image' src='https://github.com/user-attachments/assets/87c81087-dbbc-444e-88e7-2daf48d0cee9' />
+<img width='549' height='372' alt='Image' src='https://github.com/user-attachments/assets/1ea44ae5-ec94-4c29-aabb-a3f0e6012af7' />
+<img width='826' height='291' alt='Image' src='https://github.com/user-attachments/assets/20c3139e-354c-4a14-a865-ef75e088142c' />
+
+#### 4.15.2 zip/unzip相关命令
+<img width='779' height='119' alt='Image' src='https://github.com/user-attachments/assets/19d3a816-37b8-4c51-9f9e-fa304a30eaf5' />
+<img width='592' height='153' alt='Image' src='https://github.com/user-attachments/assets/628dfc68-389f-4287-8e96-e217a8ff7f62' />
+<img width='834' height='416' alt='Image' src='https://github.com/user-attachments/assets/2a620577-c513-4abc-b3b4-258c1a9cf4fe' />
+
+### 4.15.3 scp命令
+scp是cp命令的升级版 即 ssh cp
+
+把参数1复制到参数2
+<img width='322' height='71' alt='Image' src='https://github.com/user-attachments/assets/b0f3f067-c65f-4aba-ad5b-5764f62cde11' />
 。">
 <meta property="og:title" content="Linux基础知识">
 <meta property="og:description" content="# Linux学习
@@ -175,6 +286,9 @@ vim hello.txt //进入命令模式
 在命令模式内 按键盘:进入底线命令模式
 在底线命令内输入 **:wq** 保存文件并退出vim编辑器
 
+### 1.3 更换yum源教程
+[https://zhuanlan.zhihu.com/p/700216782](url)
+
 ## 2 linux 基础命令
 ### 2.1 Linux的目录结构
 <img width='1147' height='357' alt='Image' src='https://github.com/user-attachments/assets/73e7fd07-4a5b-4740-9a3e-d07c6d16ad69' />
@@ -302,6 +416,114 @@ exit 回退到普通用户
 ### 3.8 chown命令
 <img width='833' height='249' alt='Image' src='https://github.com/user-attachments/assets/344819e5-b221-4a54-9cb6-63417640fcf7' />
 
+##4 常见操作命令
+### 4.1 历史命令搜索
+- history ---找到历史命令
+- 通过`:!`命令前缀 制动匹配上一次匹配前缀的命令
+- ctrl + r 输入内容去匹配历史命令
+
+### 4.2 清屏
+- ctrl + l清屏
+- clear
+
+### 4.3 yum命令(centos)
+yum命令需要联网 且需要root权限
+<img width='796' height='247' alt='Image' src='https://github.com/user-attachments/assets/d782c619-5e9b-4c94-a386-8b07959abef3' />
+
+### 4.4 apt命令(ubuntu)
+<img width='959' height='379' alt='Image' src='https://github.com/user-attachments/assets/3392a356-107f-41cf-9f36-db11bbafddf8' />
+
+### 4.5 systemctl命令---控制服务的启动 关闭和状态
+<img width='976' height='368' alt='Image' src='https://github.com/user-attachments/assets/5d35764a-1537-4072-befa-2a163ac27841' />
+<img width='512' height='129' alt='Image' src='https://github.com/user-attachments/assets/a9e17f29-f987-45b4-9e4a-85949ed801af' />
+
+### 4.6 ln命令创建软链接
+<img width='569' height='376' alt='Image' src='https://github.com/user-attachments/assets/569ca6c6-6c91-4b19-a2d3-b3bea8cb6515' />
+
+### 4.7 日期和时间
+
+#### 4.7.1 date命令
+<img width='622' height='394' alt='Image' src='https://github.com/user-attachments/assets/6a8fcf78-bf56-439e-9f39-3149a3878307' />
+ 
+#### 4.7.2 修改Linux时区
+<img width='1015' height='155' alt='Image' src='https://github.com/user-attachments/assets/db191f65-e31f-488c-af18-fb5e38ea08e0' />
+
+#### 4.7.3 ntp程序联网自动校准时间
+<img width='540' height='254' alt='Image' src='https://github.com/user-attachments/assets/63262bb5-d9be-4c78-a3c8-8e151cfd922c' />
+
+### 4.8 IP地址和主机名
+ifconfig --查看ip地址
+hostname --查看主机名
+
+修改主机名
+<img width='726' height='322' alt='Image' src='https://github.com/user-attachments/assets/d900492d-1c71-4b6c-833b-9069e37c632e' />
+
+### 4.9 网络传输
+#### 4.9.1 ping命令
+<img width='602' height='169' alt='Image' src='https://github.com/user-attachments/assets/17db76fd-48f7-48dd-b045-2b8d883f3d5e' />
+eg ping -c 3 baidu.com
+
+#### 4.9.2 wget命令 在命令行中下载网络文件
+<img width='752' height='162' alt='Image' src='https://github.com/user-attachments/assets/16db5434-96f8-4dd6-931d-dc4ca142c3f5' />
+
+#### 4.9.3 curl命令 发送http网络请求 可用于下载文件，获取信息
+<img width='699' height='159' alt='Image' src='https://github.com/user-attachments/assets/f95ac1c7-dd29-407e-bfcb-e8b96012676d' />
+
+### 4.10 端口
+<img width='552' height='120' alt='Image' src='https://github.com/user-attachments/assets/3842a68d-e57a-4573-be0b-cf9613ce519f' />
+<img width='685' height='154' alt='Image' src='https://github.com/user-attachments/assets/f503ed79-8308-4eff-9854-1c98dd604f55' />
+
+### 4.11 进程管理
+<img width='546' height='195' alt='Image' src='https://github.com/user-attachments/assets/adcadd17-3eb5-4b8c-939b-578564882b23' />
+<img width='762' height='118' alt='Image' src='https://github.com/user-attachments/assets/42e5da98-cf84-48c6-9f93-691472d90dc1' />
+
+### 4.12 主机资源
+#### 4.12.1 top命令 ----查看系统资源占用
+top命令内容详解
+<img width='1111' height='354' alt='Image' src='https://github.com/user-attachments/assets/a513d557-caef-432a-9b39-df9929853dbc' />
+<img width='280' height='194' alt='Image' src='https://github.com/user-attachments/assets/0c7774a1-07e4-40e2-bb99-679a5ec1b65e' />
+<img width='981' height='372' alt='Image' src='https://github.com/user-attachments/assets/bf361966-cb6e-442a-97cd-d95f2dbc832c' />
+
+#### 4.12.2 查看磁盘使用情况
+df命令
+<img width='401' height='109' alt='Image' src='https://github.com/user-attachments/assets/fe91a85e-f3c3-4d09-96a5-92ddccf349af' />
+iostat命令
+<img width='490' height='154' alt='Image' src='https://github.com/user-attachments/assets/94a951b6-f5f1-42f9-90ec-525adac05918' />
+
+#### 4.12.3 网络状态监控
+<img width='831' height='152' alt='Image' src='https://github.com/user-attachments/assets/09fef8d8-53dc-4965-9b22-66a909343eca' />
+
+### 4.13 环境变量
+env命令 直接查看环境变量
+env | grep PATH  ---查看本机的环境变量
+
+$符号用于取出变量的值
+eg echo $PATH ---查看本机环境变量
+
+#### 4.13.1 自行设置环境变量
+<img width='730' height='216' alt='Image' src='https://github.com/user-attachments/assets/1a55826a-924b-4b09-b475-84d709d4fce2' />
+
+### 4.14 上传/下载
+1.可在MabaXterm中进行相关操作
+2.rz和sz命令(rz命令较慢)
+<img width='608' height='378' alt='Image' src='https://github.com/user-attachments/assets/0a01f38b-755d-4c86-b885-360b7660fc6c' />
+
+### 4.15压缩
+#### 4.15.1 tar相关命令
+<img width='1095' height='469' alt='Image' src='https://github.com/user-attachments/assets/87c81087-dbbc-444e-88e7-2daf48d0cee9' />
+<img width='549' height='372' alt='Image' src='https://github.com/user-attachments/assets/1ea44ae5-ec94-4c29-aabb-a3f0e6012af7' />
+<img width='826' height='291' alt='Image' src='https://github.com/user-attachments/assets/20c3139e-354c-4a14-a865-ef75e088142c' />
+
+#### 4.15.2 zip/unzip相关命令
+<img width='779' height='119' alt='Image' src='https://github.com/user-attachments/assets/19d3a816-37b8-4c51-9f9e-fa304a30eaf5' />
+<img width='592' height='153' alt='Image' src='https://github.com/user-attachments/assets/628dfc68-389f-4287-8e96-e217a8ff7f62' />
+<img width='834' height='416' alt='Image' src='https://github.com/user-attachments/assets/2a620577-c513-4abc-b3b4-258c1a9cf4fe' />
+
+### 4.15.3 scp命令
+scp是cp命令的升级版 即 ssh cp
+
+把参数1复制到参数2
+<img width='322' height='71' alt='Image' src='https://github.com/user-attachments/assets/b0f3f067-c65f-4aba-ad5b-5764f62cde11' />
 。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://Chi-43.github.io/post/Linux-ji-chu-zhi-shi.html">
@@ -377,6 +599,8 @@ vim hello.txt //进入命令模式<br>
 输入完成后，按<strong>esc</strong>回退回命令模式<br>
 在命令模式内 按键盘:进入底线命令模式<br>
 在底线命令内输入 <strong>:wq</strong> 保存文件并退出vim编辑器</p>
+<h3>1.3 更换yum源教程</h3>
+<p><a href="url">https://zhuanlan.zhihu.com/p/700216782</a></p>
 <h2>2 linux 基础命令</h2>
 <h3>2.1 Linux的目录结构</h3>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/73e7fd07-4a5b-4740-9a3e-d07c6d16ad69"><img width="1147" height="357" alt="Image" src="https://github.com/user-attachments/assets/73e7fd07-4a5b-4740-9a3e-d07c6d16ad69" style="max-width: 100%; height: auto; max-height: 357px;; aspect-ratio: 1147 / 357; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
@@ -467,7 +691,92 @@ exit 回退到普通用户</p>
 <h3>3.7 权限的数字序号</h3>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e4508731-e7b8-4b3b-98dd-838bcec4f4f6"><img width="977" height="427" alt="Image" src="https://github.com/user-attachments/assets/e4508731-e7b8-4b3b-98dd-838bcec4f4f6" style="max-width: 100%; height: auto; max-height: 427px;; aspect-ratio: 977 / 427; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
 <h3>3.8 chown命令</h3>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/344819e5-b221-4a54-9cb6-63417640fcf7"><img width="833" height="249" alt="Image" src="https://github.com/user-attachments/assets/344819e5-b221-4a54-9cb6-63417640fcf7" style="max-width: 100%; height: auto; max-height: 249px;; aspect-ratio: 833 / 249; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p></div>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/344819e5-b221-4a54-9cb6-63417640fcf7"><img width="833" height="249" alt="Image" src="https://github.com/user-attachments/assets/344819e5-b221-4a54-9cb6-63417640fcf7" style="max-width: 100%; height: auto; max-height: 249px;; aspect-ratio: 833 / 249; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p>##4 常见操作命令</p>
+<h3>4.1 历史命令搜索</h3>
+<ul>
+<li>history ---找到历史命令</li>
+<li>通过<code class="notranslate">:!</code>命令前缀 制动匹配上一次匹配前缀的命令</li>
+<li>ctrl + r 输入内容去匹配历史命令</li>
+</ul>
+<h3>4.2 清屏</h3>
+<ul>
+<li>ctrl + l清屏</li>
+<li>clear</li>
+</ul>
+<h3>4.3 yum命令(centos)</h3>
+<p>yum命令需要联网 且需要root权限<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/d782c619-5e9b-4c94-a386-8b07959abef3"><img width="796" height="247" alt="Image" src="https://github.com/user-attachments/assets/d782c619-5e9b-4c94-a386-8b07959abef3" style="max-width: 100%; height: auto; max-height: 247px;; aspect-ratio: 796 / 247; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.4 apt命令(ubuntu)</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/3392a356-107f-41cf-9f36-db11bbafddf8"><img width="959" height="379" alt="Image" src="https://github.com/user-attachments/assets/3392a356-107f-41cf-9f36-db11bbafddf8" style="max-width: 100%; height: auto; max-height: 379px;; aspect-ratio: 959 / 379; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.5 systemctl命令---控制服务的启动 关闭和状态</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5d35764a-1537-4072-befa-2a163ac27841"><img width="976" height="368" alt="Image" src="https://github.com/user-attachments/assets/5d35764a-1537-4072-befa-2a163ac27841" style="max-width: 100%; height: auto; max-height: 368px;; aspect-ratio: 976 / 368; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a9e17f29-f987-45b4-9e4a-85949ed801af"><img width="512" height="129" alt="Image" src="https://github.com/user-attachments/assets/a9e17f29-f987-45b4-9e4a-85949ed801af" style="max-width: 100%; height: auto; max-height: 129px;; aspect-ratio: 512 / 129; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.6 ln命令创建软链接</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/569ca6c6-6c91-4b19-a2d3-b3bea8cb6515"><img width="569" height="376" alt="Image" src="https://github.com/user-attachments/assets/569ca6c6-6c91-4b19-a2d3-b3bea8cb6515" style="max-width: 100%; height: auto; max-height: 376px;; aspect-ratio: 569 / 376; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.7 日期和时间</h3>
+<h4>4.7.1 date命令</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6a8fcf78-bf56-439e-9f39-3149a3878307"><img width="622" height="394" alt="Image" src="https://github.com/user-attachments/assets/6a8fcf78-bf56-439e-9f39-3149a3878307" style="max-width: 100%; height: auto; max-height: 394px;; aspect-ratio: 622 / 394; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h4>4.7.2 修改Linux时区</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/db191f65-e31f-488c-af18-fb5e38ea08e0"><img width="1015" height="155" alt="Image" src="https://github.com/user-attachments/assets/db191f65-e31f-488c-af18-fb5e38ea08e0" style="max-width: 100%; height: auto; max-height: 155px;; aspect-ratio: 1015 / 155; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h4>4.7.3 ntp程序联网自动校准时间</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/63262bb5-d9be-4c78-a3c8-8e151cfd922c"><img width="540" height="254" alt="Image" src="https://github.com/user-attachments/assets/63262bb5-d9be-4c78-a3c8-8e151cfd922c" style="max-width: 100%; height: auto; max-height: 254px;; aspect-ratio: 540 / 254; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.8 IP地址和主机名</h3>
+<p>ifconfig --查看ip地址<br>
+hostname --查看主机名</p>
+<p>修改主机名<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/d900492d-1c71-4b6c-833b-9069e37c632e"><img width="726" height="322" alt="Image" src="https://github.com/user-attachments/assets/d900492d-1c71-4b6c-833b-9069e37c632e" style="max-width: 100%; height: auto; max-height: 322px;; aspect-ratio: 726 / 322; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.9 网络传输</h3>
+<h4>4.9.1 ping命令</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/17db76fd-48f7-48dd-b045-2b8d883f3d5e"><img width="602" height="169" alt="Image" src="https://github.com/user-attachments/assets/17db76fd-48f7-48dd-b045-2b8d883f3d5e" style="max-width: 100%; height: auto; max-height: 169px;; aspect-ratio: 602 / 169; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+eg ping -c 3 baidu.com
+<h4>4.9.2 wget命令 在命令行中下载网络文件</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/16db5434-96f8-4dd6-931d-dc4ca142c3f5"><img width="752" height="162" alt="Image" src="https://github.com/user-attachments/assets/16db5434-96f8-4dd6-931d-dc4ca142c3f5" style="max-width: 100%; height: auto; max-height: 162px;; aspect-ratio: 752 / 162; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h4>4.9.3 curl命令 发送http网络请求 可用于下载文件，获取信息</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f95ac1c7-dd29-407e-bfcb-e8b96012676d"><img width="699" height="159" alt="Image" src="https://github.com/user-attachments/assets/f95ac1c7-dd29-407e-bfcb-e8b96012676d" style="max-width: 100%; height: auto; max-height: 159px;; aspect-ratio: 699 / 159; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.10 端口</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/3842a68d-e57a-4573-be0b-cf9613ce519f"><img width="552" height="120" alt="Image" src="https://github.com/user-attachments/assets/3842a68d-e57a-4573-be0b-cf9613ce519f" style="max-width: 100%; height: auto; max-height: 120px;; aspect-ratio: 552 / 120; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f503ed79-8308-4eff-9854-1c98dd604f55"><img width="685" height="154" alt="Image" src="https://github.com/user-attachments/assets/f503ed79-8308-4eff-9854-1c98dd604f55" style="max-width: 100%; height: auto; max-height: 154px;; aspect-ratio: 685 / 154; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.11 进程管理</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/adcadd17-3eb5-4b8c-939b-578564882b23"><img width="546" height="195" alt="Image" src="https://github.com/user-attachments/assets/adcadd17-3eb5-4b8c-939b-578564882b23" style="max-width: 100%; height: auto; max-height: 195px;; aspect-ratio: 546 / 195; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/42e5da98-cf84-48c6-9f93-691472d90dc1"><img width="762" height="118" alt="Image" src="https://github.com/user-attachments/assets/42e5da98-cf84-48c6-9f93-691472d90dc1" style="max-width: 100%; height: auto; max-height: 118px;; aspect-ratio: 762 / 118; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.12 主机资源</h3>
+<h4>4.12.1 top命令 ----查看系统资源占用</h4>
+<p>top命令内容详解<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a513d557-caef-432a-9b39-df9929853dbc"><img width="1111" height="354" alt="Image" src="https://github.com/user-attachments/assets/a513d557-caef-432a-9b39-df9929853dbc" style="max-width: 100%; height: auto; max-height: 354px;; aspect-ratio: 1111 / 354; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/0c7774a1-07e4-40e2-bb99-679a5ec1b65e"><img width="280" height="194" alt="Image" src="https://github.com/user-attachments/assets/0c7774a1-07e4-40e2-bb99-679a5ec1b65e" style="max-width: 100%; height: auto; max-height: 194px;; aspect-ratio: 280 / 194; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/bf361966-cb6e-442a-97cd-d95f2dbc832c"><img width="981" height="372" alt="Image" src="https://github.com/user-attachments/assets/bf361966-cb6e-442a-97cd-d95f2dbc832c" style="max-width: 100%; height: auto; max-height: 372px;; aspect-ratio: 981 / 372; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h4>4.12.2 查看磁盘使用情况</h4>
+<p>df命令<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fe91a85e-f3c3-4d09-96a5-92ddccf349af"><img width="401" height="109" alt="Image" src="https://github.com/user-attachments/assets/fe91a85e-f3c3-4d09-96a5-92ddccf349af" style="max-width: 100%; height: auto; max-height: 109px;; aspect-ratio: 401 / 109; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a><br>
+iostat命令<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/94a951b6-f5f1-42f9-90ec-525adac05918"><img width="490" height="154" alt="Image" src="https://github.com/user-attachments/assets/94a951b6-f5f1-42f9-90ec-525adac05918" style="max-width: 100%; height: auto; max-height: 154px;; aspect-ratio: 490 / 154; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h4>4.12.3 网络状态监控</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/09fef8d8-53dc-4965-9b22-66a909343eca"><img width="831" height="152" alt="Image" src="https://github.com/user-attachments/assets/09fef8d8-53dc-4965-9b22-66a909343eca" style="max-width: 100%; height: auto; max-height: 152px;; aspect-ratio: 831 / 152; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.13 环境变量</h3>
+<p>env命令 直接查看环境变量<br>
+env | grep PATH  ---查看本机的环境变量</p>
+<p>$符号用于取出变量的值<br>
+eg echo $PATH ---查看本机环境变量</p>
+<h4>4.13.1 自行设置环境变量</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1a55826a-924b-4b09-b475-84d709d4fce2"><img width="730" height="216" alt="Image" src="https://github.com/user-attachments/assets/1a55826a-924b-4b09-b475-84d709d4fce2" style="max-width: 100%; height: auto; max-height: 216px;; aspect-ratio: 730 / 216; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.14 上传/下载</h3>
+<p>1.可在MabaXterm中进行相关操作<br>
+2.rz和sz命令(rz命令较慢)<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/0a01f38b-755d-4c86-b885-360b7660fc6c"><img width="608" height="378" alt="Image" src="https://github.com/user-attachments/assets/0a01f38b-755d-4c86-b885-360b7660fc6c" style="max-width: 100%; height: auto; max-height: 378px;; aspect-ratio: 608 / 378; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.15压缩</h3>
+<h4>4.15.1 tar相关命令</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/87c81087-dbbc-444e-88e7-2daf48d0cee9"><img width="1095" height="469" alt="Image" src="https://github.com/user-attachments/assets/87c81087-dbbc-444e-88e7-2daf48d0cee9" style="max-width: 100%; height: auto; max-height: 469px;; aspect-ratio: 1095 / 469; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1ea44ae5-ec94-4c29-aabb-a3f0e6012af7"><img width="549" height="372" alt="Image" src="https://github.com/user-attachments/assets/1ea44ae5-ec94-4c29-aabb-a3f0e6012af7" style="max-width: 100%; height: auto; max-height: 372px;; aspect-ratio: 549 / 372; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/20c3139e-354c-4a14-a865-ef75e088142c"><img width="826" height="291" alt="Image" src="https://github.com/user-attachments/assets/20c3139e-354c-4a14-a865-ef75e088142c" style="max-width: 100%; height: auto; max-height: 291px;; aspect-ratio: 826 / 291; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h4>4.15.2 zip/unzip相关命令</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/19d3a816-37b8-4c51-9f9e-fa304a30eaf5"><img width="779" height="119" alt="Image" src="https://github.com/user-attachments/assets/19d3a816-37b8-4c51-9f9e-fa304a30eaf5" style="max-width: 100%; height: auto; max-height: 119px;; aspect-ratio: 779 / 119; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/628dfc68-389f-4287-8e96-e217a8ff7f62"><img width="592" height="153" alt="Image" src="https://github.com/user-attachments/assets/628dfc68-389f-4287-8e96-e217a8ff7f62" style="max-width: 100%; height: auto; max-height: 153px;; aspect-ratio: 592 / 153; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/2a620577-c513-4abc-b3b4-258c1a9cf4fe"><img width="834" height="416" alt="Image" src="https://github.com/user-attachments/assets/2a620577-c513-4abc-b3b4-258c1a9cf4fe" style="max-width: 100%; height: auto; max-height: 416px;; aspect-ratio: 834 / 416; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p>
+<h3>4.15.3 scp命令</h3>
+<p>scp是cp命令的升级版 即 ssh cp</p>
+<p>把参数1复制到参数2<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b0f3f067-c65f-4aba-ad5b-5764f62cde11"><img width="322" height="71" alt="Image" src="https://github.com/user-attachments/assets/b0f3f067-c65f-4aba-ad5b-5764f62cde11" style="max-width: 100%; height: auto; max-height: 71px;; aspect-ratio: 322 / 71; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
